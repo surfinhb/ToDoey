@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="L7c-i8-ctW" id="MCf-Zf-Sih"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDoey" id="QPi-sj-Yg9"/>
+                    <navigationItem key="navigationItem" title="ToDoey" id="QPi-sj-Yg9">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rFU-d5-JEK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addItem:" destination="L7c-i8-ctW" id="wy8-91-2BT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7o-uV-eGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +59,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G8W-zl-sqM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="L7c-i8-ctW" kind="relationship" relationship="rootViewController" id="xQl-z4-eIg"/>
                     </connections>
